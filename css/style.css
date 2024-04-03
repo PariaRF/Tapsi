@@ -1,0 +1,55 @@
+/* RESET */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ROOT VARIABLE */
+:root{
+    --color-primary: #FF5722;
+    --color-secondary-light: #FFF6F2;
+    --color-secondary-dark: #FFA589;
+    --color-navbar: #f8f8f8;
+    --color-headings: #000000;
+    --color-body: #333333;
+    --color-white: #ffffff;
+}
+
+/* TYPOGRAPHY */
+h1,h2,h3{
+    color: var(--color-headings);
+    font-weight: 700;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+body{
+    color: var(--color-body);
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    body{
+        font-size: 1.8rem;
+    }
+}
