@@ -1,12 +1,479 @@
-<html lang="fa" dir="rtl">
+<html dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>تاکسی اینترنتی تپسی- TAPSI</title>
 </head>
 <body>
+    <!-- HEADRER -->
+    <header>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+                    <g fill-rule="evenodd">
+                        <path fill="#000" d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"></path>
+                        <path fill="#000" d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"></path>
+                        <path fill="#FF5B35" d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"></path>
+                    </g>
+                </svg>
+            </a>
+            <div class="nav__link-container">
+                <ul class="nav__links">
+                    <li class="nav__link">
+                        <a href="#">ویدیوها</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">پشتیبانی</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">امور سهام</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">تپسی پک</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">فرصت های شغلی</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">وبلاگ</a>
+                    </li>
+                </ul>
+                <button class="btn btn--primary btn--download">دانلود تپسی</button>
+                <div class="nav__hamburger" >
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <picture>
+            <source srcset="assets/images/banner.webp" type="image/webp" media="(min-width: 768px)">
+            <source srcset="assets/images/banner.jpg" type="image/jpg" media="(min-width: 768px)">
+            <source srcset="assets/images/banner-mobile.webp" type="image/webp" media="(max-width: 768px)">
+            <source srcset="assets/images/banner-mobile.jpg" type="image/jpg" media="(max-width: 768px)">
+            <img alt="banner" src="assets/images/banner.jpg" class="banner__img">
+         </picture>
+         <picture>
+            <source srcset="/assets/images/mockup-phone.webp" type="image/webp" media="(min-width: 1024px)">
+            <source srcset="/assets/images/mockup-phone.png" type="image/png" media="(min-width: 1024px)">
+            <img alt="phone" class="banner__phone">
+         </picture>
+         <div class="content-wrapper">
+            <div class="content-wrapper__container">
+                <h1>تپسی</h1>
+                <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+                <div class="intro-btn">
+                    <div class="intro-btn__passenger btn__passenger--primary">
+                        <span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
+                        <a href="#">دانلود اپلیکیشن مسافران</a>
+                    </div>
+                    <div class="intro-btn__passenger btn__passenger--primary">
+                        <a href="#">وب اپلیکیشن مسافران</a>
+                    </div>
+                    <div class="intro-btn__passenger btn__passenger--secondary">
+                        <span>
+                            <i class="fas fa-car"></i>
+                        </span>
+                        <a href="#">ثبت نام راننده خودرو</a>
+                    </div>
+                    <div class="intro-btn__passenger btn__passenger--secondary">
+                        <span>
+                            <i class="fa-solid fa-helmet-un"></i>
+                        </span>
+                        <a href="">ثبت نام راننده موتور</a>
+                    </div>
+                    <div class="intro-btn__passenger btn__passenger--secondary last-element">
+                        <span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
+                        <a href="">دانلود اپلیکیشن رانندگان</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- SERVICES -->
+    <div class="services block" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <div class="services__block">
+        <h2>سرویس های تپسی</h2>
+        <!-- tabs -->
+        <div class="nav nav-tabs container" id="nav-tab" role="tablist">
+            <a class="nav__tab active" data-tab-target="nav-classic-tab">
+                <img src="/assets/images/cc-classic.png" alt="tapsi-classic-icon">
+                <p>تپسی کلاسیک</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-tel-tab"> 
+                <img src="/assets/images/cc-tel.png" alt="tapsi-tel-icon">
+                <p>تپسی تلفنی</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-line-tab"> 
+                <img src="/assets/images/cc-line.png" alt="tapsi-line-icon">
+                <p>تپسی لاین</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-motopeyk-tab"> 
+                <img src="/assets/images/cc-motopeyk.png" alt="motopeyk-icon">
+                <p>موتوپیک</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-autopeyk-tab"> 
+                <img src="/assets/images/cc-autopeyk.png" alt="autopeyk-icon">
+                <p>اتوپیک</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-plus-tab"> 
+                <img src="/assets/images/cc-plus.png" alt="tapsi-plus-icon">
+                <p>تپسی پلاس</p>
+            </a>
+            <a class="nav__tab" data-tab-target="nav-hamyar-tab"> 
+                <img src="/assets/images/cc-hamyar.png" alt="hamyar-icon">
+                <p>همیار</p>
+            </a>
+        </div>
+        <!-- contents -->
+        <div class="container">  
+            <div class="tab-content active" id="nav-classic-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-classic.png" alt="tapsi-classic-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">تپسی کلاسیک</h3>
+                    <p class="feature__text">
+                        با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون&zwnj;شهری در هر ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و همچنین توقف در مسیر را دارید.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tel-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-tel.png" alt="tapsi-tel-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">تپسی تلفنی</h3>
+                    <p class="feature__text">
+                   سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می&zwnj;دهد که بدون نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. این سرویس تاکسی تلفنی مناسب زمانی است که به هر دلیلی دسترسی به اینترنت یا اپلیکیشن ندارید. همچنین سرویس تلفنی تپسی، راه حلی مناسب برای افرادی است که کار کردن با اپلیکیشن&zwnj;های موبایلی برایشان راحت نیست.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-line-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-line.png" alt="tapsi-line-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">تپسی لاین</h3>
+                    <p class="feature__text">
+                        تپسی لاین سرویسی است که امکان سفر اشتراکی را برایتان فراهم می&zwnj;کند. در این سرویس شما با مسافر دیگری که هم&zwnj;مسیرتان است، هم&zwnj;سفر خواهید بود و هزینه سفرتان تقسیم می&zwnj;شود.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-motopeyk-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-motopeyk.png" alt="motopeyk-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">موتو پیک</h3>
+                    <p class="feature__text">
+                        با استفاده از سرویس موتوپیک، بسته&zwnj;ها و مرسولاتتان با پیک موتور به مقصد ارسال می&zwnj;شوند. این سرویس مناسب زمانی است که می&zwnj;خواهید مرسوله سریع&zwnj;تر به مقصد برسد. در این سرویس، شما می&zwnj;توانید مسیر رسیدن مرسوله&zwnj;تان به مقصد را به صورت لحظه&zwnj;ای روی نقشه دنبال کنید.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-autopeyk-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-autopeyk.png" alt="autopeyk-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">اتو پیک</h3>
+                    <p class="feature__text">
+                        اتوپیک سرویسی برای ارسال بسته&zwnj;های شما با خودرو است. این سرویس، برای زمانی مناسب است که بسته&zwnj;های شما، با موتور قابل ارسال نیستند و یا در حین جابجایی، نیاز به مراقبت بیشتری دارند. در این سرویس نیز امکان رصد لحظه &zwnj;به لحظه موقعیت مکانی مرسوله تا زمان رسیدن به مقصد فراهم است.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-plus-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-plus.png" alt="tapsi-plus-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">تپسی پلاس</h3>
+                    <p class="feature__text">
+                        در سرویس پلاس تاکسی اینترنتی تپسی، خودرویی با مدل بالاتر و عمر کمتر، به دنبال شما خواهد آمد. همچنین، رانندگان این سرویس بالاترین امتیاز را از مسافران دریافت کرده&zwnj;اند. در این سرویس که در حال حاضر در تهران فعال است، امکان تعیین چند مقصد یا توقف در حین سفر، وجود دارد.
+                    </p>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-hamyar-tab">
+                <div class="feature__img" >
+                    <img src="/assets/images/cc-hamyar.png" alt="hamyar-icon">
+                </div>   
+                <div class="feature__desc">
+                    <h3 class="feature__title">همیار</h3>
+                    <p class="feature__text">
+                        سرویس همیار تپسی، به جای شما خرید می&zwnj;کند. کافیست فروشگاه مورد نظر خود را به عنوان مبدا مشخص کرده و لیست خریدتان را داخل اپ وارد کنید. این خرید&zwnj;ها می&zwnj;تواند از سوپرمارکت یا داروخانه مورد نظر شما باشند.
+                    </p>
+                </div>
+            </div>   
+        </div>
+    </div>
+    </div>
+
+     <!-- FEATURE -->
+    <section class="feature container">  
+        <div class="feature__img" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <img src="/assets/images/i-mac.png" alt="corporate">
+        </div>   
+        <div class="feature__desc" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <h2 class="feature__title">خدمات تپسی برای کسب و کارها</h2>
+            <p class="feature__text">
+            پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست هم زمان تعدا نامحدودی خودرو و پیک را برای کسب و کارها و سازمان ها فراهم می کند. و با استفاده از آن می توانید ماموریت های درون شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
+            </p>
+            <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+        </div>
+    </section>
+
+    <!-- CHARGE -->
+    <section class="charge feature container">  
+        <div class="feature__img" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <img src="/assets/images/macbook.webp" alt="voucher-sales">
+        </div>   
+        <div class="feature__desc" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <h2 class="feature__title">خرید کد اعتبار تپسی</h2>
+            <p class="feature__text">
+                کد اعتبار تپسی امکان استفاده از تخفیف یک تا ده درصدی سفر با تپسی را برای کاربران، کسب و کارها و سازمان&zwnj;ها فراهم می&zwnj;کند. تنها با صرف چند دقیقه می&zwnj;توانید این کد را تهیه کنید تا هزینه سفرهایتان با تپسی را کاهش دهید یا آن را در اختیار کارکنان و مشتریانتان بگذارید.
+             </p>
+            <button class="btn btn--primary">خرید کد اعتبار و تخفیف</button>
+        </div>
+    </section>
     
+    <!-- PLANS -->
+    <section class="plans container">
+        <h2 class="">تعرفه های ویژه مشتریان</h2>
+        <div class="plans__list">
+            <div class="plans__card card--secondary" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <div class="plans__header">
+                <div class="plans__intro-row">
+                    <span>عادی</span>
+                    <span class="badge badge--secondary">10% OFF</span>
+                </div>
+                <div class="plans__price-row">
+                    <span class="plans__price">290,000</span>
+                    <span class="plans__billing-cycle">ماهانه / تومان</span>
+                </div>
+                <div class="plans__desc-row">سرویس ماشین های معمولی</div>
+                </div>
+                <div class="plans__body">
+                   <div class="plan__list__check">
+                        <ul class="list list--check">
+                            <li class="list__item">کیفیت معمولی</li>
+                            <li class="list__item">کیفیت معمولی</li>
+                            <li class="list__item">کیفیت معمولی</li>
+                            <li class="list__item">کیفیت معمولی</li>
+                        </ul>
+                   </div>
+                   <div class="plan__action">
+                        <button class="btn btn--primary btn--block">ثبت سفارش</button>
+                   </div>
+                </div>
+            </div>
+            <div class="plans__card card--primary plan--popular" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <div class="plans__header">
+                <div class="plans__intro-row">
+                    <span>اقتصادی</span>
+                    <span class="badge badge--primary">15% OFF</span>
+                </div>
+                <div class="plans__price-row">
+                    <span class="plans__price">390,000</span>
+                    <span class="plans__billing-cycle">ماهانه / تومان</span>
+                </div>
+                <div class="plans__desc-row">سرویس ماشین های کلاسیک</div>
+                </div>
+                <div class="plans__body">
+                    <div class="plan__list__check">
+                        <ul class="list list--check">
+                            <li class="list__item">کیفیت عالی</li>
+                            <li class="list__item">کم سرو صدا</li>
+                            <li class="list__item">زمان محدود</li>
+                            <li class="list__item">سرویس روزانه</li>
+                        </ul>
+                   </div>
+                   <div class="plan__action">
+                        <button class="btn btn--primary btn--block">ثبت سفارش</button>
+                   </div>
+                </div>
+            </div>
+            <div class="plans__card card--secondary" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                <div class="plans__header">
+                <div class="plans__intro-row">
+                    <span>ویژه</span>
+                    <span class="badge badge--secondary">20% OFF</span>
+                </div>
+                <div class="plans__price-row">
+                    <span class="plans__price">490,000</span>
+                    <span class="plans__billing-cycle">ماهانه / تومان</span>
+                </div>
+                <div class="plans__desc-row">سرویس ماشین های مدل بالا</div>
+                </div>
+                <div class="plans__body">
+                   <div class="plan__list__check">
+                        <ul class="list list--check">
+                            <li class="list__item">کیفیت خیلی خفن</li>
+                            <li class="list__item">بی سرو صدا</li>
+                            <li class="list__item">زمان نامحدود</li>
+                            <li class="list__item">سرویس نامحدود</li>
+                        </ul>
+                   </div>
+                   <div class="plan__action">
+                    <button class="btn btn--primary btn--block">ثبت سفارش</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT-US -->
+    <section class="contact-us container">
+        <div class="contact-us__header">
+            <h2>ارتباط با ما</h2>
+            <span>شما می توانید، نظرات و انتقادات خود را برای ما بفرستید</span>
+        </div>
+        <div class="contact-us__body">
+            <div class="contact-us__address">
+                <div class="contact-us__social">
+                    <svg class="icon-social">
+                        <use xlink:href="/assets/images/contact-info-sprit.svg#linkedin"></use>
+                    </svg>
+                    <svg class="icon-social">
+                        <use xlink:href="/assets/images/contact-info-sprit.svg#facebook"></use>
+                    </svg>
+                    <svg class="icon-social">
+                        <use xlink:href="/assets/images/contact-info-sprit.svg#twitter"></use>
+                    </svg>
+                </div>
+                <div class="contact-us__info">
+                     <div class="contact-us__location">
+                        <span class="icon-container">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/contact-info-sprit.svg#location"></use>
+                            </svg>
+                        </span>
+                        <span class="contact-us__info__text">Spring St undefined Anchorage, Georgia 12473</span>
+                     </div>
+                     <div class="contact-us__phone">
+                        <span class="icon-container">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/contact-info-sprit.svg#phone"></use>
+                            </svg>
+                        </span>
+                        <span class="contact-us__info__text">+989182451234</span>
+                     </div>
+                     <div class="contact-us__mail">
+                        <span class="icon-container">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/contact-info-sprit.svg#mail"></use>
+                            </svg>
+                        </span>
+                        <span class="contact-us__info__text">info@fronthooks.ir</span>
+                     </div>
+                </div>
+                <div class="contact-us__map">
+                    <img src="/assets/images/map.png" alt="location tapsi on the map">
+                </div>
+            </div>
+            <div class="contact-us__message">
+                <form class="contact-us__form">
+                    <h3>نظرات شما</h3>
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <div class="contact-us__btn-container">
+                        <button type="submit" class="btn btn--primary btn--form">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__section container">
+            <div class="footer__col">
+                <img src="/assets/images/tapsi-logo-white.svg" alt="tapsi-white-logo" class="footer__logo">
+                <span class="footer__desc">اپلیکیشن درخواست خودرو و پیک</span>
+                <span class="footer__first-copy-write">تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.</span>
+            </div>
+            <div class="footer__col">
+                <h3>تپسی</h3>
+                <ul class="footer__nav">
+                    <li>وبلاگ تپسی</li>
+                    <li>فرصت شغلی</li>
+                    <li>تماس با ما</li>
+                    <li>لوگو و هویت سازمانی</li>
+                    <li>استخدام بازاریاب</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3>مسافران</h3>
+                <ul class="footer__nav">
+                    <li>دانلود اپ مسافر</li>
+                    <li>نسخه وب تپسی</li>
+                    <li>پرسش های متداول مسافران</li>
+                    <li>شرایط و قوانین مسافران</li>
+                    <li>باشگاه مشتریان</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3>رانندگان</h3>
+                <ul class="footer__nav">
+                    <li>دانلود اپ سفیر</li>
+                    <li>ثبت نام راننده تاکسی اینترنتی</li>
+                    <li>پرسش های متداول سفیران</li>
+                    <li>شرایط و قوانین سفیران</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3>کسب و کارها</h3>
+                <ul class="footer__nav">
+                    <li>پنل سازمانی تپسی</li>
+                    <li>خرید کد اعتبار و تخفیف</li>
+                    <li>دریافت API</li>
+                </ul>
+            </div>
+            <div class="footer__col footer--last-col">
+                <div class="footer__trust-col">
+                    <img src="/assets/images/ENAMAD.png" alt="enamad-logo">
+                    <img src="/assets/images/SAMANDEHI.png" alt="samandehi-logo">
+                    <img src="/assets/images/ETEHADIEH.png" alt="etehadieh-logo">
+                </div>
+                <span class="footer__second-copy-write">تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.</span>
+                <div class="footer__social">
+                    <svg class="icon">
+                        <use xlink:href="/assets/images/footer-social-icon.svg#facebook"></use>
+                    </svg>
+                    <svg class="icon">
+                        <use xlink:href="/assets/images/footer-social-icon.svg#instagram"></use>
+                    </svg>
+                    <svg class="icon">
+                        <use xlink:href="/assets/images/footer-social-icon.svg#linkedin"></use>
+                    </svg><svg class="icon">
+                        <use xlink:href="/assets/images/footer-social-icon.svg#telegram"></use>
+                    </svg>
+                    <svg class="icon">
+                        <use xlink:href="/assets/images/footer-social-icon.svg#twitter"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/javascript.js"></script>
 </body>
 </html>
