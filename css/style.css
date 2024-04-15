@@ -31,6 +31,7 @@ html{
     --color-nav-link: #545454;
     --color-white: #ffffff;
     --color-secondary-white: #FFF6F2;
+    --avatar-size: 50px;
 }
 
 /* TYPOGRAPHY */
@@ -941,18 +942,17 @@ header .nav{
 
 /* SERVICES SECTION */
 .nav-tabs::-webkit-scrollbar {
-    /* width: 5px; Mostly for vertical scrollbars */
-    height: 5px; /* Mostly for horizontal scrollbars */
+    height: 5px;
 }
-   
-.nav-tabs::-webkit-scrollbar-thumb { /* Foreground */
+
+.nav-tabs::-webkit-scrollbar-thumb {
     background: #ddd;
     border-radius: 1rem;
 
 
 }
-   
-.nav-tabs::-webkit-scrollbar-track { /* Background */
+ 
+.nav-tabs::-webkit-scrollbar-track {
     border-radius: 1rem;
 }
 
@@ -1038,4 +1038,221 @@ header .nav{
     .tab-content .feature__desc{
         width: 50%;
     }
+}
+
+/* TRAVEL */
+.travel{
+    padding: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.travel__slides{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+    gap: 1.5rem;
+}
+
+.travel__slide{
+    flex: 0 0 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.travel__img{
+    width: 100%;
+    height: 200px;
+}
+
+.travel__detail{
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-radius: 32px;
+    padding: 1rem 1.5rem;
+    transform: translateY(-60px);
+    width: 80%;
+}
+
+.travel__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.travel__header span{ 
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.travel__header .badge{
+    font-size: 1.2rem;
+    padding: 0.1rem 1.2rem;
+}
+
+.travel__title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.travel__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.travel__icons i,
+.travel__icons span{
+    color: #cacaca;
+    transition: 0.5s;
+}
+
+.travel__icons__action i{
+    margin-right: 1rem;
+}
+
+.travel__icons i:hover{
+    cursor: pointer;
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.travel__slides::-webkit-scrollbar{
+    height: 5px;
+}
+
+.travel__slides::-webkit-scrollbar-thumb{
+    background: #ddd;
+    border-radius: 1rem;
+
+
+}
+ 
+.travel__slides::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+.travel__avatar-group{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.travel__avatar,
+.hidden-avatars{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.travel__avatar{
+    margin-left: -20px;
+}
+
+.travel__avatar:hover:not(:last-of-type){
+    cursor: pointer;
+    transform: translate(10px);
+}
+
+.hidden-avatars{
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border-radius: 100%;
+    padding: 0.75rem 0 0;
+}
+
+.travel__avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* ACCORDION */
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 1rem;
+}
+
+.accordion__header:hover{
+    cursor: pointer;
+}
+
+.accordion__title{
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.accordion__content{
+    border-radius: 5px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.accordion__expanded .accordion__content{
+    max-height: 100%;
+    opacity: 1;
+    padding: 2rem;
+}
+
+.accordion.accordion__expanded{
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 1rem;
+}
+
+.accordion__header i{
+    color: var(--color-primary);
+    font-size: 2rem;
+    transition: all 0.4s ease-out;
+}
+
+.accordion__expanded i{
+    transform: rotate(180deg);
+}
+
+.accordion__wrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ececec;
+    box-shadow: 0 9px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accordion{
+    padding: 1rem 2rem;
+}
+
+.accordion__intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: 2.5rem;
+    padding: 1rem 2rem;
+    color: var(--color-primary);
+}
+
+.accordion__intro h2{
+    margin-bottom: 0;
+}
+
+.accordion__heading{
+    font-size: 1.8rem;
 }
