@@ -484,7 +484,6 @@ html,body{
     border-radius: 35px;
     width:14.5rem;
     height: 5rem;
-    padding: 18px 38px 18px 38px;
     font-weight: bold;
 }
 
@@ -937,6 +936,7 @@ header .nav{
         position: absolute;
         bottom: -37%;
         left: 10%;
+        margin-bottom: 1rem;
      }
 }
 
@@ -1028,6 +1028,7 @@ header .nav{
 @media screen and (min-width: 1024px){
     .services.block{
         padding: 1rem 10% 5rem;
+        margin-top: 8rem;
     }
     .nav__tab p{
         font-size: 1.4rem;
